@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://raw.githubusercontent.com/toddmeinershagen/NLog.SignalR/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/toddmeinershagen/NLog.SignalR</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Custom NLog target for send logs to a SignalR hub.  This release is based on SignalR 2.0.</releaseNotes>
+    <copyright>Copyright 2012</copyright>
+    <tags>nlog target signalr</tags>
+  </metadata>
+</package>
