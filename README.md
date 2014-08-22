@@ -1,8 +1,6 @@
 NLog.SignalR
 ============
 
-# NLog.SignalR
-
 NLog.SignalR is a [SignalR](https://github.com/SignalR/SignalR) target for [NLog](https://github.com/jkowalski/NLog), allowing you to send log messages straight to a SignalR hub in real-time.
 
 ## Getting started
