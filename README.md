@@ -14,37 +14,41 @@ To add to your own projects do the following.
 
 #### Add NLog.SignalR.dll to your project(s) via [NuGet](http://www.nuget.org/packages/NLog.SignalR/)
 
-	> install-package NLog.SignalR
+  > install-package NLog.SignalR
 
 #### Configure NLog
 
 Add the assembly and new target to NLog.config:
 
-	<?xml version="1.0" encoding="utf-8" ?>
-	<nlog 	xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
-      		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      		autoReload="true"
-      		throwExceptions="false">
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<nlog   xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        autoReload="true"
+        throwExceptions="false">
 
-  		<extensions>
-    			<add assembly="NLog.SignalR" />
-  		</extensions>
 
-    		<targets async="true">
-    			<target xsi:type="SignalR"
-            			name="signalr"
-            			uri="http://localhost:1860"
-            			hubName ="LoggingHub"
-            			methodName ="Log"
-            			layout="${message}"
-            		/>
+      <!-- extensions is not needed in NLog 4+ -->
+      <extensions>
+        <add assembly="NLog.SignalR" />
+      </extensions>
 
-  		</targets>
-  		
-		<rules>
-    			<logger name="*" minlevel="Trace" writeTo="signalr" />
-  		</rules>
-	</nlog>
+      <targets async="true">
+        <target xsi:type="SignalR"
+                name="signalr"
+                uri="http://localhost:1860"
+                hubName ="LoggingHub"
+                methodName ="Log"
+                layout="${message}"
+              />
+
+    </targets>
+    
+    <rules>
+      <logger name="*" minlevel="Trace" writeTo="signalr" />
+    </rules>
+</nlog>
+```
 
 Note:  the only required property for the target is the uri.  The target will default hubName, methodName, and layout properties.
 
@@ -52,41 +56,47 @@ Note:  the only required property for the target is the uri.  The target will de
 
 There are two methods you can use for setting up the Hub in your web project.  One is to set up a strongly-typed hub, using the interface provided by the NLog.SignalR component.
 
-	public class LoggingHub : Hub<ILoggingHub>
-    	{
-        	public void Log(LogEvent logEvent)
-        	{
-            		Clients.Others.Log(logEvent);
-        	}
-    	}
+```c#
+public class LoggingHub : Hub<ILoggingHub>
+{
+    public void Log(LogEvent logEvent)
+    {
+          Clients.Others.Log(logEvent);
+    }
+}
+```
 
 The other way is to simply set up a Hub in your web project using dynamic types.
 
-	public class LoggingHub : Hub
-    	{
-        	public void Log(dynamic logEvent)
-    		{
-            		Clients.Others.Log(logEvent);
-        	}
-    	}
+```c#
+public class LoggingHub : Hub
+{
+    public void Log(dynamic logEvent)
+    {
+          Clients.Others.Log(logEvent);
+    }
+}
+```
 
 #### Set up client-side JavaScript to listen for log events
 
-    	<script>
+```javscript
+<script>
+  
+$(function() {
         
-		    $(function() {
-            	
-			    var nlog = $.connection.loggingHub;
-                nlog.client.log = function(logEvent) {
-				    //Put code here to handle the logEvent that is sent.
-			    };
+ var nlog = $.connection.loggingHub;
+          nlog.client.log = function(logEvent) {
+  //Put code here to handle the logEvent that is sent.
+ };
 
-                $.connection.hub.start().done(function() {
-				    //Put code here that you want to execute after connecting to the Hub.
-			    });
-		    })		
+          $.connection.hub.start().done(function() {
+  //Put code here that you want to execute after connecting to the Hub.
+ });
+})    
 
-        <Script>
+<script>
+```
 
 ## Feedback
 
