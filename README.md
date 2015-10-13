@@ -80,18 +80,18 @@ public class LoggingHub : Hub
 
 #### Set up client-side JavaScript to listen for log events
 
-```javscript
+```html
 <script>
   
 $(function() {
         
  var nlog = $.connection.loggingHub;
-          nlog.client.log = function(logEvent) {
-  //Put code here to handle the logEvent that is sent.
+ nlog.client.log = function(logEvent) {
+   //Put code here to handle the logEvent that is sent.
  };
 
-          $.connection.hub.start().done(function() {
-  //Put code here that you want to execute after connecting to the Hub.
+ $.connection.hub.start().done(function() {
+   //Put code here that you want to execute after connecting to the Hub.
  });
 })    
 
