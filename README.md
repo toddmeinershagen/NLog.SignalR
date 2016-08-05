@@ -3,8 +3,7 @@ NLog.SignalR
 
 NLog.SignalR is a [SignalR](https://github.com/SignalR/SignalR) target for [NLog](https://github.com/jkowalski/NLog), allowing you to send log messages straight to a SignalR hub in real-time.
 
-[![NuGet version (NLog.Signalr)](https://img.shields.io/nuget/v/NLog.Signalr.svg?style=flat)](https://www.nuget.org/packages/NLog.Signalr/)
-[![NuGet version (NLog.Signalr)](https://img.shields.io/nuget/dt/NLog.Signalr.svg?style=flat)](https://www.nuget.org/packages/NLog.Signalr/)
+[![NLog.SignalR](https://badge.fury.io/nu/NLog.SignalR.svg)](https://badge.fury.io/nu/NLog.SignalR)
 
 ## Getting started
 
