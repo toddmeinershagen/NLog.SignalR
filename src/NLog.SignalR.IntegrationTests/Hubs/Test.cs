@@ -1,24 +1,20 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.IO;
-using System.IO.MemoryMappedFiles;
 
 namespace NLog.SignalR.IntegrationTests.Hubs
 {
     public class Test
     {
-        private static readonly Test Instance = new Test();
+        private static readonly Lazy<Test> Instance = new Lazy<Test>(() => new Test());
 
         private Test()
         {
-            SignalRLogEvents = new List<LogEvent>();
+            SignalRLogEvents = new ConcurrentStack<LogEvent>();
         }
 
-        public static Test Current
-        {
-            get { return Instance; }
-        }
+        public static Test Current => Instance.Value;
 
-        public IList<LogEvent> SignalRLogEvents { get; private set; }
+        public ConcurrentStack<LogEvent> SignalRLogEvents { get; private set; }
     }
 }

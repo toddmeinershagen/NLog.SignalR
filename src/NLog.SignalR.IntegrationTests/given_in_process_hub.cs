@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using FluentAssertions;
 using James.Testing;
@@ -34,25 +36,29 @@ namespace NLog.SignalR.IntegrationTests
                 Uri = HubBaseUrl,
                 Layout = "${message}"
             };
-            SimpleConfigurator.ConfigureForTargetLogging(target, LogLevel.Trace);
+            SimpleConfigurator.ConfigureForTargetLogging(target);
 
             const string expectedMessage = "This is a sample trace message.";
 
+            var tasks = new List<Task>();
+            
             Action action1 = () =>
             {
-                Logger.Trace(expectedMessage);
-                Wait.For(1).Seconds();
+                Logger.Info(expectedMessage);
+                Wait.Until(() => Test.Current.SignalRLogEvents.FirstOrDefault(x => x.Level == "Info" && x.Message == expectedMessage) != null, TimeSpan.FromSeconds(10));
             };
+            tasks.Add(Task.Factory.StartNew(action1));
 
             Action action2 = () =>
             {
                 Logger.Error(expectedMessage);
-                Wait.For(1).Seconds();
+                Wait.Until(() => Test.Current.SignalRLogEvents.FirstOrDefault(x => x.Level == "Error" && x.Message == expectedMessage) != null, TimeSpan.FromSeconds(10));
             };
+            tasks.Add(Task.Factory.StartNew(action2));
 
-            Parallel.Invoke(action1, action2);
+            Task.WaitAll(tasks.ToArray());
 
-            Test.Current.SignalRLogEvents.Should().Contain(x => x.Level == "Trace" && x.Message == expectedMessage);
+            Test.Current.SignalRLogEvents.Should().Contain(x => x.Level == "Info" && x.Message == expectedMessage);
             Test.Current.SignalRLogEvents.Should().Contain(x => x.Level == "Error" && x.Message == expectedMessage);
         }
 

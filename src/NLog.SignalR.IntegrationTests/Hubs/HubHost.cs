@@ -42,7 +42,7 @@ namespace NLog.SignalR.IntegrationTests.Hubs
         {
             public void Log(LogEvent logEvent)
             {
-                Test.Current.SignalRLogEvents.Add(logEvent);
+                Test.Current.SignalRLogEvents.Push(logEvent);
 
                 var client = new HttpClient{BaseAddress = new Uri(OutOfProcessHubFixture.RestBaseUrl)};
                 var response = client.PostAsync("SignalRLogEvents", logEvent, new JsonMediaTypeFormatter()).Result;

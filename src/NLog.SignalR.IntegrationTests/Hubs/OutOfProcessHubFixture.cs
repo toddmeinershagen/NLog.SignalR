@@ -1,5 +1,8 @@
 using System;
 using System.Diagnostics;
+using System.Text;
+using System.Threading;
+using James.Testing;
 using Nancy;
 using Nancy.Hosting.Self;
 using Nancy.ModelBinding;
@@ -23,13 +26,46 @@ namespace NLog.SignalR.IntegrationTests.Hubs
             StartHub();
         }
 
+        private static ManualResetEventSlim _mre;
+        private static StringBuilder _output;
+
         protected void StartHub()
         {
             _process = new Process
             {
-                StartInfo = new ProcessStartInfo("NLog.SignalR.IntegrationTests.exe", HubBaseUrl) {UseShellExecute = false}
+                StartInfo =
+                    new ProcessStartInfo("NLog.SignalR.IntegrationTests.exe", HubBaseUrl)
+                    {
+                        UseShellExecute = false,
+                        CreateNoWindow = true,
+                        RedirectStandardOutput = true
+                    }
             };
+
+            _output = new StringBuilder();
+            _process.OutputDataReceived += OutputHandler;
+            _process.Disposed += DisposedHandler;
+
+            _mre = new ManualResetEventSlim();
             _process.Start();
+            _process.BeginOutputReadLine();
+            _mre.Wait();
+
+            Wait.For(3).Seconds();
+        }
+
+        private static void OutputHandler(object sendingProcess, DataReceivedEventArgs args)
+        {
+            _output.Append(args.Data);
+            if (_output.ToString() == "Service is listening...")
+            {
+                _mre.Set();
+            }
+        }
+
+        private void DisposedHandler(object sender, EventArgs e)
+        {
+            _mre.Set();
         }
 
         protected void StopHub()
@@ -37,8 +73,12 @@ namespace NLog.SignalR.IntegrationTests.Hubs
             if (_process == null)
                 return;
 
+            _mre = new ManualResetEventSlim();
             _process.Kill();
+            _process.WaitForExit();
             _process.Dispose();
+            _mre.Wait();
+
             _process = null;
         }
 
@@ -47,9 +87,7 @@ namespace NLog.SignalR.IntegrationTests.Hubs
         {
             StopHub();
 
-            if (_host == null)
-                return;
-            _host.Dispose();
+            _host?.Dispose();
         }
     }
 
@@ -61,7 +99,8 @@ namespace NLog.SignalR.IntegrationTests.Hubs
             Post["/"] = _ =>
             {
                 var logEvent = this.Bind<LogEvent>();
-                Test.Current.SignalRLogEvents.Add(logEvent);
+
+                Test.Current.SignalRLogEvents.Push(logEvent);
                 return Negotiate
                     .WithModel(logEvent)
                     .WithStatusCode(HttpStatusCode.Created);
