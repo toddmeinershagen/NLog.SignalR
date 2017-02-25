@@ -4,6 +4,7 @@ NLog.SignalR
 NLog.SignalR is a [SignalR](https://github.com/SignalR/SignalR) target for [NLog](https://github.com/jkowalski/NLog), allowing you to send log messages straight to a SignalR hub in real-time.
 
 [![NLog.SignalR](https://badge.fury.io/nu/NLog.SignalR.svg)](https://badge.fury.io/nu/NLog.SignalR)
+[![AppVeyor](https://img.shields.io/appveyor/ci/toddmeinershagen/nlog-signalr/master.svg)](https://ci.appveyor.com/project/toddmeinershagen/nlog-signalr/branch/master)
 
 ## Getting started
 
