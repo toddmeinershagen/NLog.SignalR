@@ -13,8 +13,9 @@
     <releaseNotes>
       Custom NLog target for send logs to a SignalR hub.  This release is based on SignalR 2.0.
       >2.0.0 - Initial version supporting SignalR 2.0
-      >2.0.1 - Fixed a [bug #4](https://github.com/toddmeinershagen/NLog.SignalR/issues/4
-    )</releaseNotes>
+      >2.0.1 - Fixed a [bug #4](https://github.com/toddmeinershagen/NLog.SignalR/issues/4)
+      >4.0.1 - Upgraded the NLog dependency to force clients to use the newer version which contains breaking changes.
+    </releaseNotes>
     <copyright>Copyright 2012</copyright>
     <tags>nlog target signalr</tags>
   </metadata>
