@@ -6,6 +6,7 @@ using FluentAssertions;
 using James.Testing;
 using NLog.Config;
 using NLog.SignalR.IntegrationTests.Hubs;
+using NLog.Targets.Wrappers;
 using NUnit.Framework;
 
 namespace NLog.SignalR.IntegrationTests
@@ -60,6 +61,30 @@ namespace NLog.SignalR.IntegrationTests
 
             Test.Current.SignalRLogEvents.Should().Contain(x => x.Level == "Info" && x.Message == expectedMessage);
             Test.Current.SignalRLogEvents.Should().Contain(x => x.Level == "Error" && x.Message == expectedMessage);
+        }
+
+        [Test]
+        public void given_nlog_configured_to_use_signalr_target_for_hub_when_logging_event_should_log_to_signalr2()
+        {
+            var target = new SignalRTarget
+            {
+                Name = "signalr",
+                Uri = HubBaseUrl,
+                Layout = "${event-properties:item=MyProperty}"
+            };
+
+            SimpleConfigurator.ConfigureForTargetLogging(target);
+
+            const string expectedMessage = "Hello, world.";
+            const string expectedProperty = "Goodbye, world.";
+
+            var logEvent = new LogEventInfo(LogLevel.Info, Logger.Name, expectedMessage);
+            logEvent.Properties["MyProperty"] = expectedProperty;
+            Logger.Info(logEvent);
+
+            Wait.Until(() => Test.Current.SignalRLogEvents.FirstOrDefault(x => x.Level == "Info") != null, TimeSpan.FromSeconds(10));
+
+            Test.Current.SignalRLogEvents.Should().Contain(x => x.Level == "Info" && x.Message == expectedProperty);
         }
 
         [Test]

@@ -10,7 +10,6 @@ namespace NLog.SignalR
     public class SignalRTarget : TargetWithLayout
     {
         public static SignalRTarget Instance = new SignalRTarget();
-        public Action<String, LogEventInfo> LogEventHandler;
 
         [RequiredParameter]
         public string Uri { get; set; }
@@ -32,17 +31,7 @@ namespace NLog.SignalR
 
         protected override void Write(LogEventInfo logEvent)
         {
-            Log(logEvent);
-        }
-
-        protected override void Write(AsyncLogEventInfo logEvent)
-        {
-            Log(logEvent.LogEvent);
-        }
-
-        private void Log(LogEventInfo logEvent)
-        {
-            var renderedMessage = Layout.Render(logEvent);
+            var renderedMessage = this.Layout.Render(logEvent);
             var item = new LogEvent(logEvent, renderedMessage);
 
             Proxy.Log(item);
