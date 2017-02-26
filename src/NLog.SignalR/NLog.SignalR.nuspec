@@ -8,7 +8,7 @@
     <owners>$author$</owners>
     <licenseUrl>https://raw.githubusercontent.com/toddmeinershagen/NLog.SignalR/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/toddmeinershagen/NLog.SignalR</projectUrl>
-	<iconUrl>https://cloud.githubusercontent.com/assets/177508/23336951/5bd0ec54-fba4-11e6-9eb4-6c525317bc3f.png</iconUrl>
+	<iconUrl>http://nlog-project.org/N.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>
