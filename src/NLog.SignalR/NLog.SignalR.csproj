@@ -17,6 +17,14 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/toddmeinershagen/NLog.SignalR/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/toddmeinershagen/NLog.SignalR</RepositoryUrl>
+    <Version>4.1.0</Version>
+    <PackageTags>nlog target signalr</PackageTags>
+    <PackageReleaseNotes>Custom NLog target for send logs to a SignalR hub.  This release is based on SignalR 2.0.
+&gt;4.1.0 - Upgraded to support NET Standard 1.3 so that it can be used with dotnet core projects.
+&gt;4.0.1 - Upgraded the NLog dependency to force clients to use the newer version which contains breaking changes.
+&gt;2.0.1 - Fixed a [bug #4](https://github.com/toddmeinershagen/NLog.SignalR/issues/4)
+&gt;2.0.0 - Initial version supporting SignalR 2.0</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup Condition=" '$(TargetFramework)' != 'netstandard1.3' ">
     <PackageReference Include="NLog" Version="4.0.1" />

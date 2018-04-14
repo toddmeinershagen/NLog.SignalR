@@ -1,0 +1,1442 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-eYhUAIv4O/68uoHkCtYXVTxc5Q92+NKMtOryYR5Svt7vDp34XkrggN5j4lrKyiB0B2HUyrAYvAb3tlhmFGhivg==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-592c4aa40e940d1b0607a3cf272916ff.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-LUrF+o8wSTstABZwkJhSTy+PQCtGPf92OmcqBwdTsQyKTZ3JTXFyiTiLtXX2/PUT7ofgLcU5FNcBN7E+RQlWGQ==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-96ebb1551fc5dba84c6d2a0fa7b1cfcf.css" />
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>ui-grid.info/ui-grid.min.css at gh-pages · angular-ui/ui-grid.info</title>
+    <meta name="description" content="GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/1530011?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="angular-ui/ui-grid.info" /><meta property="og:url" content="https://github.com/angular-ui/ui-grid.info" /><meta property="og:description" content="ui-grid.info - Website for ui-grid" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjY2NTIxNTAzOmJjNjQ0NmE1NDk4NmFmYzJmYzk4MzU5YjMzODI2YjVjMjE3OWFlMDBlYzQ4YzI4NDliNzNlNzc5NTI1MTY4MDI=--a86d3861d6e8968c31d639fc4d456d05cd1417a1">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="C1B3:70E8:1818AC4:2EC7FDE:5AD255DA" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="C1B3:70E8:1818AC4:2EC7FDE:5AD255DA" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="177508" /><meta name="octolytics-actor-login" content="toddmeinershagen" /><meta name="octolytics-actor-hash" content="f26a9ec4e1a253dc6060fab66a4b8aeb144fa7b82e167cf47b968215d2767381" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="toddmeinershagen">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="NzE2M2Q1ZmE1YzVkZjkyMjBkZGYwNGM0NmQwZTg2ZWY4MTkyYmRjYmY1NjY2MmQyM2E0NTBmOWI4Y2QzMWRhMHx7InJlbW90ZV9hZGRyZXNzIjoiNzAuMTIxLjkuMzMiLCJyZXF1ZXN0X2lkIjoiQzFCMzo3MEU4OjE4MThBQzQ6MkVDN0ZERTo1QUQyNTVEQSIsInRpbWVzdGFtcCI6MTUyMzczMzk3OCwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_SELF_SERVE,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
+
+  <meta name="html-safe-nonce" content="50749110bab068d57e7a0955630f996644241834">
+
+  <meta http-equiv="x-pjax-version" content="402da7acb22ff2e9e7f63736b021d40d">
+  
+
+      <link href="https://github.com/angular-ui/ui-grid.info/commits/gh-pages.atom" rel="alternate" title="Recent Commits to ui-grid.info:gh-pages" type="application/atom+xml">
+
+  <meta name="description" content="ui-grid.info - Website for ui-grid">
+  <meta name="go-import" content="github.com/angular-ui/ui-grid.info git https://github.com/angular-ui/ui-grid.info.git">
+
+  <meta name="octolytics-dimension-user_id" content="1530011" /><meta name="octolytics-dimension-user_login" content="angular-ui" /><meta name="octolytics-dimension-repository_id" content="15142510" /><meta name="octolytics-dimension-repository_nwo" content="angular-ui/ui-grid.info" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="15142510" /><meta name="octolytics-dimension-repository_network_root_nwo" content="angular-ui/ui-grid.info" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/angular-ui/ui-grid.info/blob/gh-pages/release/3.0.1/ui-grid.min.css" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+
+<link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 container-lg">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <div class="d-flex">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scoped-search-url="/angular-ui/ui-grid.info/search" data-unscoped-search-url="/search" action="/angular-ui/ui-grid.info/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+    <label class="form-control header-search-wrapper  js-chromeless-input-container">
+          <a class="header-search-scope no-underline" href="/angular-ui/ui-grid.info/blob/gh-pages/release/3.0.1/ui-grid.min.css">This repository</a>
+      <input type="text"
+        class="form-control header-search-input  js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s,/"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off"
+        >
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none" role="navigation">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+                Issues
+</a>            </li>
+                <li>
+                  <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-selected-links=" /marketplace" href="/marketplace">
+                    Marketplace
+</a>                </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </div>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown js-menu-container">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:unread" data-channel="notification-changed:177508" href="/notifications">
+        <span class="mail-status unread"></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown js-menu-container">
+    <details class="dropdown-details details-reset js-dropdown-details d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink"
+         aria-label="Create new…"
+         data-ga-click="Header, create new, icon:add">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"/></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+
+      </ul>
+    </details>
+  </li>
+
+  <li class="dropdown js-menu-container">
+
+    <details class="dropdown-details details-reset js-dropdown-details d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1"
+        aria-label="View profile and more"
+        data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@toddmeinershagen" class="avatar float-left mr-1" src="https://avatars3.githubusercontent.com/u/177508?s=40&amp;v=4" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        <li class="dropdown-header header-nav-current-user css-truncate">
+          Signed in as <strong class="css-truncate-target">toddmeinershagen</strong>
+        </li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="/toddmeinershagen" data-ga-click="Header, go to profile, text:your profile">
+          Your profile
+        </a></li>
+        <li><a class="dropdown-item" href="/toddmeinershagen?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a></li>
+          <li><a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">
+          Help
+        </a></li>
+
+        <li><a class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+          Settings
+        </a></li>
+
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="eE4gVSfaYNC99x0btKzroXn05r98RgXjJtnbozhpSGQP8QvwVQENvbt2+XKmntIIwApBEBEwIe3i5fbfCVpX2g==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+        </form></li>
+      </ul>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="VJ66XFBT5g5m6Vx2ePyrO0/8e8z4lkQDzfjZlRDOIzUjIZH5IoiLY2BouB9qzpKS9gLcY5XgYA0JxPTpIf08iw==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="l1K2Ri7jyy4NkUJaL1Vh1K5ItZprwkU1GZ9HZpQU2nrYImnI03nlpjkeFYdvUhDuek/ImdOqgS546qGP6nG6Jg==" />      <input type="hidden" name="repository_id" id="repository_id" value="15142510" class="form-control" />
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="/angular-ui/ui-grid.info/subscription"
+            class="btn btn-sm btn-with-count select-menu-button js-menu-target"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Toggle repository notifications menu"
+            data-ga-click="Repository, click Watch settings, action:blob#show">
+            <span class="js-select-button">
+                <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count"
+            href="/angular-ui/ui-grid.info/watchers"
+            aria-label="165 users are watching this repository">
+            165
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_included" value="included" checked="checked" />
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_subscribed" value="subscribed" />
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                        Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_ignore" value="ignore" />
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-mute" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                        Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/angular-ui/ui-grid.info/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="xM3XVnfuoV/HmojO7i+byXGT/Oyq3UNld2+rqDcc1xFSLrE4oHq5D5VL59lFYoCxCw4htVGBzsUC9GBagZZg8A==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar angular-ui/ui-grid.info"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/angular-ui/ui-grid.info/stargazers"
+           aria-label="367 users starred this repository">
+          367
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/angular-ui/ui-grid.info/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="u8Gzh+aOdpwsRquFHqhgQ1mz50XEq6tgDZFFGit+sv5/J+Cb0gytk0VtOcokO8m+1NGYCFxXcsw/7QoVpRmNgQ==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star angular-ui/ui-grid.info"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/angular-ui/ui-grid.info/stargazers"
+           aria-label="367 users starred this repository">
+          367
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <a href="#fork-destination-box" class="btn btn-sm btn-with-count"
+              title="Fork your own copy of angular-ui/ui-grid.info to your account"
+              aria-label="Fork your own copy of angular-ui/ui-grid.info to your account"
+              rel="facebox"
+              data-ga-click="Repository, show fork modal, action:blob#show; text:Fork">
+              <svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+            Fork
+          </a>
+
+          <div id="fork-destination-box" style="display: none;">
+            <h2 class="facebox-header" data-facebox-id="facebox-header">Where should we fork this repository?</h2>
+            <include-fragment src=""
+                class="js-fork-select-fragment fork-select-fragment"
+                data-url="/angular-ui/ui-grid.info/fork?fragment=1">
+              <img alt="Loading" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" width="64" height="64" />
+            </include-fragment>
+          </div>
+
+    <a href="/angular-ui/ui-grid.info/network" class="social-count"
+       aria-label="1652 users forked this repository">
+      1,652
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" href="/angular-ui">angular-ui</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/angular-ui/ui-grid.info">ui-grid.info</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /angular-ui/ui-grid.info/tree/gh-pages" href="/angular-ui/ui-grid.info/tree/gh-pages">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /angular-ui/ui-grid.info/pulls" href="/angular-ui/ui-grid.info/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /angular-ui/ui-grid.info/projects" href="/angular-ui/ui-grid.info/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+
+  <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /angular-ui/ui-grid.info/pulse" href="/angular-ui/ui-grid.info/pulse">
+    <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/angular-ui/ui-grid.info/blob/feffe717c7583e3700ce2295b0c70692cfa3379c/release/3.0.1/ui-grid.min.css">Permalink</a>
+
+  <!-- blob contrib key: blob_contributors:v21:5fae84590b6043ca98b9e802c46fc26f -->
+
+  <div class="file-navigation">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">gh-pages</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/angular-ui/ui-grid.info/blob/gh-pages-blog/release/3.0.1/ui-grid.min.css"
+               data-name="gh-pages-blog"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                gh-pages-blog
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/angular-ui/ui-grid.info/blob/gh-pages/release/3.0.1/ui-grid.min.css"
+               data-name="gh-pages"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                gh-pages
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/angular-ui/ui-grid.info/blob/master/release/3.0.1/ui-grid.min.css"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/vv3.0.0-rc.7/release/3.0.1/ui-grid.min.css"
+              data-name="vv3.0.0-rc.7"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="vv3.0.0-rc.7">
+                vv3.0.0-rc.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/vv3.0.0-rc.3/release/3.0.1/ui-grid.min.css"
+              data-name="vv3.0.0-rc.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="vv3.0.0-rc.3">
+                vv3.0.0-rc.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.4.6/release/3.0.1/ui-grid.min.css"
+              data-name="v4.4.6"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.4.6">
+                v4.4.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.4.5/release/3.0.1/ui-grid.min.css"
+              data-name="v4.4.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.4.5">
+                v4.4.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.4.4/release/3.0.1/ui-grid.min.css"
+              data-name="v4.4.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.4.4">
+                v4.4.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.4.3/release/3.0.1/ui-grid.min.css"
+              data-name="v4.4.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.4.3">
+                v4.4.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.4.2/release/3.0.1/ui-grid.min.css"
+              data-name="v4.4.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.4.2">
+                v4.4.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.4.1/release/3.0.1/ui-grid.min.css"
+              data-name="v4.4.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.4.1">
+                v4.4.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.4.0/release/3.0.1/ui-grid.min.css"
+              data-name="v4.4.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.4.0">
+                v4.4.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.3.1/release/3.0.1/ui-grid.min.css"
+              data-name="v4.3.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.3.1">
+                v4.3.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.2.4/release/3.0.1/ui-grid.min.css"
+              data-name="v4.2.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.2.4">
+                v4.2.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.2.3/release/3.0.1/ui-grid.min.css"
+              data-name="v4.2.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.2.3">
+                v4.2.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.2.2/release/3.0.1/ui-grid.min.css"
+              data-name="v4.2.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.2.2">
+                v4.2.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.2.1/release/3.0.1/ui-grid.min.css"
+              data-name="v4.2.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.2.1">
+                v4.2.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.2.0/release/3.0.1/ui-grid.min.css"
+              data-name="v4.2.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.2.0">
+                v4.2.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.1.3/release/3.0.1/ui-grid.min.css"
+              data-name="v4.1.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.1.3">
+                v4.1.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.1.2/release/3.0.1/ui-grid.min.css"
+              data-name="v4.1.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.1.2">
+                v4.1.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.1.1/release/3.0.1/ui-grid.min.css"
+              data-name="v4.1.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.1.1">
+                v4.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.1.0/release/3.0.1/ui-grid.min.css"
+              data-name="v4.1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.1.0">
+                v4.1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.11/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.11"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.11">
+                v4.0.11
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.10/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.10"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.10">
+                v4.0.10
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.9/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.9"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.9">
+                v4.0.9
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.8/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.8"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.8">
+                v4.0.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.7/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.7"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.7">
+                v4.0.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.6/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.6"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.6">
+                v4.0.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.5/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.5">
+                v4.0.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.4/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.4">
+                v4.0.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.3/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.3">
+                v4.0.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.2/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.2">
+                v4.0.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.1/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.1">
+                v4.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v4.0.0/release/3.0.1/ui-grid.min.css"
+              data-name="v4.0.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v4.0.0">
+                v4.0.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.2.9/release/3.0.1/ui-grid.min.css"
+              data-name="v3.2.9"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.9">
+                v3.2.9
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.2.8/release/3.0.1/ui-grid.min.css"
+              data-name="v3.2.8"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.8">
+                v3.2.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.2.7/release/3.0.1/ui-grid.min.css"
+              data-name="v3.2.7"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.7">
+                v3.2.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.2.6/release/3.0.1/ui-grid.min.css"
+              data-name="v3.2.6"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.6">
+                v3.2.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.2.5/release/3.0.1/ui-grid.min.css"
+              data-name="v3.2.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.5">
+                v3.2.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.2.4/release/3.0.1/ui-grid.min.css"
+              data-name="v3.2.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.4">
+                v3.2.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.2.3/release/3.0.1/ui-grid.min.css"
+              data-name="v3.2.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.3">
+                v3.2.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.2.2/release/3.0.1/ui-grid.min.css"
+              data-name="v3.2.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.2">
+                v3.2.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.2.1/release/3.0.1/ui-grid.min.css"
+              data-name="v3.2.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.2.1">
+                v3.2.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.1.1/release/3.0.1/ui-grid.min.css"
+              data-name="v3.1.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.1.1">
+                v3.1.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.1.0/release/3.0.1/ui-grid.min.css"
+              data-name="v3.1.0"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.1.0">
+                v3.1.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.7/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.7"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.7">
+                v3.0.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.6/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.6"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.6">
+                v3.0.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.5/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.5"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.5">
+                v3.0.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.4/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.4"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.4">
+                v3.0.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.3/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.3">
+                v3.0.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.2/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.2"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.2">
+                v3.0.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.1/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.1"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.1">
+                v3.0.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.22/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.22"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.22">
+                v3.0.0-rc.22
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.21/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.21"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.21">
+                v3.0.0-rc.21
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.20/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.20"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.20">
+                v3.0.0-rc.20
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.19/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.19"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.19">
+                v3.0.0-rc.19
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.16/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.16"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.16">
+                v3.0.0-rc.16
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.15/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.15"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.15">
+                v3.0.0-rc.15
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.14/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.14"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.14">
+                v3.0.0-rc.14
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.13/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.13"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.13">
+                v3.0.0-rc.13
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.12/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.12"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.12">
+                v3.0.0-rc.12
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.11/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.11"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.11">
+                v3.0.0-rc.11
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.10/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.10"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.10">
+                v3.0.0-rc.10
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.8/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.8"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.8">
+                v3.0.0-rc.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.2-gf598dc3/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.2-gf598dc3"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.2-gf598dc3">
+                v3.0.0-rc.2-gf598dc3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.2-gec2e962/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.2-gec2e962"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.2-gec2e962">
+                v3.0.0-rc.2-gec2e962
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-rc.2-ge32fd8a/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-rc.2-ge32fd8a"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-rc.2-ge32fd8a">
+                v3.0.0-rc.2-ge32fd8a
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/angular-ui/ui-grid.info/tree/v3.0.0-RC.18/release/3.0.1/ui-grid.min.css"
+              data-name="v3.0.0-RC.18"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v3.0.0-RC.18">
+                v3.0.0-RC.18
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      <a href="/angular-ui/ui-grid.info/find/gh-pages"
+            class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+            data-pjax
+            data-hotkey="t">
+        Find file
+      </a>
+      <clipboard-copy
+            for="blob-path"
+            aria-label="Copy file path to clipboard"
+            class="btn btn-sm BtnGroup-item tooltipped tooltipped-s"
+            copied-label="Copied!">
+        Copy path
+      </clipboard-copy>
+    </div>
+    <div id="blob-path" class="breadcrumb">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/angular-ui/ui-grid.info/tree/gh-pages"><span>ui-grid.info</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/angular-ui/ui-grid.info/tree/gh-pages/release"><span>release</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/angular-ui/ui-grid.info/tree/gh-pages/release/3.0.1"><span>3.0.1</span></a></span><span class="separator">/</span><strong class="final-path">ui-grid.min.css</strong>
+    </div>
+  </div>
+
+
+  <include-fragment src="/angular-ui/ui-grid.info/contributors/gh-pages/release/3.0.1/ui-grid.min.css" class="commit-tease">
+    <div>
+      Fetching contributors&hellip;
+    </div>
+
+    <div class="commit-tease-contributors">
+      <img alt="" class="loader-loading float-left" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+      <span class="loader-error">Cannot retrieve contributors at this time</span>
+    </div>
+</include-fragment>
+
+
+  <div class="file">
+    <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/angular-ui/ui-grid.info/raw/gh-pages/release/3.0.1/ui-grid.min.css">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/angular-ui/ui-grid.info/blame/gh-pages/release/3.0.1/ui-grid.min.css">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/angular-ui/ui-grid.info/commits/gh-pages/release/3.0.1/ui-grid.min.css">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="github-mac://openRepo/https://github.com/angular-ui/ui-grid.info?branch=gh-pages&amp;filepath=release%2F3.0.1%2Fui-grid.min.css"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:windows">
+            <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/angular-ui/ui-grid.info/edit/gh-pages/release/3.0.1/ui-grid.min.css" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="6Y4CPdB+DxmykNK+TIyoNi+hmF3HGte8rZfeDty//vik9uRT2cvBhotHLfwOsGpZ2SpWE0sicU2enjZlOIsLjg==" />
+            <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+              aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+              <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+            </button>
+</form>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/angular-ui/ui-grid.info/delete/gh-pages/release/3.0.1/ui-grid.min.css" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="beIW+185YlcBoxVUJdBtFihcgF8E1WHhAIT2D/LTtYB11jcROcPtam/O4QaicQcAVr0DiyNe/U3H7+uJVN7kGg==" />
+          <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and delete the file" data-disable-with>
+            <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+          </button>
+</form>  </div>
+
+  <div class="file-info">
+      4 lines (4 sloc)
+      <span class="file-info-divider"></span>
+    24.2 KB
+  </div>
+</div>
+
+    
+
+  <div itemprop="text" class="blob-wrapper data type-css">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">/*!</td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line"> * ui-grid - v3.0.1 - 2015-07-17</td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"> * Copyright (c) 2015 ; License: MIT </td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"> */.ui-grid{border:1px solid #d4d4d4;box-sizing:content-box;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-transform:translateZ(0);-moz-transform:translateZ(0);-o-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0)}.ui-grid-vertical-bar{position:absolute;right:0;width:0}.ui-grid-header-cell:not(:last-child) .ui-grid-vertical-bar,.ui-grid-cell:not(:last-child) .ui-grid-vertical-bar{width:1px}.ui-grid-scrollbar-placeholder{background-color:transparent}.ui-grid-header-cell:not(:last-child) .ui-grid-vertical-bar{background-color:#d4d4d4}.ui-grid-cell:not(:last-child) .ui-grid-vertical-bar{background-color:#d4d4d4}.ui-grid-header-cell:last-child .ui-grid-vertical-bar{right:-1px;width:1px;background-color:#d4d4d4}.ui-grid-clearfix:before,.ui-grid-clearfix:after{content:&quot;&quot;;display:table}.ui-grid-clearfix:after{clear:both}.ui-grid-invisible{visibility:hidden}.ui-grid-contents-wrapper{position:relative;height:100%;width:100%}.ui-grid-top-panel-background{background:#f3f3f3;background:-webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(1, #fff));background:-ms-linear-gradient(bottom, #eee, #fff);background:-moz-linear-gradient(center bottom, #eee 0, #fff 100%);background:-o-linear-gradient(#fff, #eee);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#ffffff&#39;, endColorstr=&#39;#eeeeee&#39;, GradientType=0)}.ui-grid-header{border-bottom:1px solid #d4d4d4;box-sizing:border-box}.ui-grid-top-panel{position:relative;overflow:hidden;font-weight:bold;background:#f3f3f3;background:-webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(1, #fff));background:-ms-linear-gradient(bottom, #eee, #fff);background:-moz-linear-gradient(center bottom, #eee 0, #fff 100%);background:-o-linear-gradient(#fff, #eee);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#ffffff&#39;, endColorstr=&#39;#eeeeee&#39;, GradientType=0);-webkit-border-top-right-radius:-1px;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:0;-webkit-border-top-left-radius:-1px;-moz-border-radius-topright:-1px;-moz-border-radius-bottomright:0;-moz-border-radius-bottomleft:0;-moz-border-radius-topleft:-1px;border-top-right-radius:-1px;border-bottom-right-radius:0;border-bottom-left-radius:0;border-top-left-radius:-1px;-moz-background-clip:padding-box;-webkit-background-clip:padding-box;background-clip:padding-box}.ui-grid-header-viewport{overflow:hidden}.ui-grid-header-canvas:before,.ui-grid-header-canvas:after{content:&quot;&quot;;display:table;line-height:0}.ui-grid-header-canvas:after{clear:both}.ui-grid-header-cell-wrapper{position:relative;display:table;box-sizing:border-box;height:100%}.ui-grid-header-cell-row{display:table-row;position:relative}.ui-grid-header-cell{position:relative;box-sizing:border-box;background-color:inherit;border-right:1px solid;border-color:#d4d4d4;display:table-cell;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:0}.ui-grid-header-cell:last-child{border-right:0}.ui-grid-header-cell .sortable{cursor:pointer}.ui-grid-header .ui-grid-vertical-bar{top:0;bottom:0}.ui-grid-column-menu-button{position:absolute;right:1px;top:0}.ui-grid-column-menu-button .ui-grid-icon-angle-down{vertical-align:sub}.ui-grid-column-menu-button-last-col{margin-right:25px}.ui-grid-column-menu{position:absolute}.ui-grid-column-menu .ui-grid-menu .ui-grid-menu-mid.ng-hide-add,.ui-grid-column-menu .ui-grid-menu .ui-grid-menu-mid.ng-hide-remove{-webkit-transition:all .05s linear;-moz-transition:all .05s linear;-o-transition:all .05s linear;transition:all .05s linear;display:block !important}.ui-grid-column-menu .ui-grid-menu .ui-grid-menu-mid.ng-hide-add.ng-hide-add-active,.ui-grid-column-menu .ui-grid-menu .ui-grid-menu-mid.ng-hide-remove{-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-o-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)}.ui-grid-column-menu .ui-grid-menu .ui-grid-menu-mid.ng-hide-add,.ui-grid-column-menu .ui-grid-menu .ui-grid-menu-mid.ng-hide-remove.ng-hide-remove-active{-webkit-transform:translateY(0);-moz-transform:translateY(0);-o-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}.ui-grid-menu-button .ui-grid-menu .ui-grid-menu-mid.ng-hide-add,.ui-grid-menu-button .ui-grid-menu .ui-grid-menu-mid.ng-hide-remove{-webkit-transition:all .05s linear;-moz-transition:all .05s linear;-o-transition:all .05s linear;transition:all .05s linear;display:block !important}.ui-grid-menu-button .ui-grid-menu .ui-grid-menu-mid.ng-hide-add.ng-hide-add-active,.ui-grid-menu-button .ui-grid-menu .ui-grid-menu-mid.ng-hide-remove{-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-o-transform:translateY(-100%);-ms-transform:translateY(-100%);transform:translateY(-100%)}.ui-grid-menu-button .ui-grid-menu .ui-grid-menu-mid.ng-hide-add,.ui-grid-menu-button .ui-grid-menu .ui-grid-menu-mid.ng-hide-remove.ng-hide-remove-active{-webkit-transform:translateY(0);-moz-transform:translateY(0);-o-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}.ui-grid-filter-container{padding:4px 10px;position:relative}.ui-grid-filter-container .ui-grid-filter-button{position:absolute;top:0;bottom:0;right:0}.ui-grid-filter-container .ui-grid-filter-button [class^=&quot;ui-grid-icon&quot;]{position:absolute;top:50%;line-height:32px;margin-top:-16px;right:10px;opacity:.66}.ui-grid-filter-container .ui-grid-filter-button [class^=&quot;ui-grid-icon&quot;]:hover{opacity:1}.ui-grid-filter-container .ui-grid-filter-button-select{position:absolute;top:0;bottom:0;right:0}.ui-grid-filter-container .ui-grid-filter-button-select [class^=&quot;ui-grid-icon&quot;]{position:absolute;top:50%;line-height:32px;margin-top:-16px;right:0;opacity:.66}.ui-grid-filter-container .ui-grid-filter-button-select [class^=&quot;ui-grid-icon&quot;]:hover{opacity:1}input[type=&quot;text&quot;].ui-grid-filter-input{padding:0;margin:0;border:0;width:100%;border:1px solid #d4d4d4;-webkit-border-top-right-radius:0;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:0;-webkit-border-top-left-radius:0;-moz-border-radius-topright:0;-moz-border-radius-bottomright:0;-moz-border-radius-bottomleft:0;-moz-border-radius-topleft:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;border-top-left-radius:0;-moz-background-clip:padding-box;-webkit-background-clip:padding-box;background-clip:padding-box}input[type=&quot;text&quot;].ui-grid-filter-input:hover{border:1px solid #d4d4d4}select.ui-grid-filter-select{padding:0;margin:0;border:0;width:90%;border:1px solid #d4d4d4;-webkit-border-top-right-radius:0;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:0;-webkit-border-top-left-radius:0;-moz-border-radius-topright:0;-moz-border-radius-bottomright:0;-moz-border-radius-bottomleft:0;-moz-border-radius-topleft:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;border-top-left-radius:0;-moz-background-clip:padding-box;-webkit-background-clip:padding-box;background-clip:padding-box}select.ui-grid-filter-select:hover{border:1px solid #d4d4d4}.ui-grid-filter-cancel-button-hidden select.ui-grid-filter-select{width:100%}.ui-grid-render-container{position:inherit;-webkit-border-top-right-radius:0;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:0;-webkit-border-top-left-radius:0;-moz-border-radius-topright:0;-moz-border-radius-bottomright:0;-moz-border-radius-bottomleft:0;-moz-border-radius-topleft:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;border-top-left-radius:0;-moz-background-clip:padding-box;-webkit-background-clip:padding-box;background-clip:padding-box}.ui-grid-render-container:focus{outline:none}.ui-grid-viewport{min-height:20px;position:relative;overflow-y:scroll;-webkit-overflow-scrolling:touch}.ui-grid-viewport:focus{outline:none !important}.ui-grid-canvas{position:relative;padding-top:1px}.ui-grid-row:nth-child(odd) .ui-grid-cell{background-color:#fdfdfd}.ui-grid-row:nth-child(even) .ui-grid-cell{background-color:#f3f3f3}.ui-grid-row:last-child .ui-grid-cell{border-bottom-color:#d4d4d4;border-bottom-style:solid}.ui-grid-no-row-overlay{position:absolute;top:0;bottom:0;left:0;right:0;margin:10%;background:#f3f3f3;background:-webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(1, #fff));background:-ms-linear-gradient(bottom, #eee, #fff);background:-moz-linear-gradient(center bottom, #eee 0, #fff 100%);background:-o-linear-gradient(#fff, #eee);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#ffffff&#39;, endColorstr=&#39;#eeeeee&#39;, GradientType=0);-webkit-border-top-right-radius:0;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:0;-webkit-border-top-left-radius:0;-moz-border-radius-topright:0;-moz-border-radius-bottomright:0;-moz-border-radius-bottomleft:0;-moz-border-radius-topleft:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;border-top-left-radius:0;-moz-background-clip:padding-box;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #d4d4d4;font-size:2em;text-align:center}.ui-grid-no-row-overlay&gt;*{position:absolute;display:table;margin:auto 0;width:100%;top:0;bottom:0;left:0;right:0;opacity:.66}.ui-grid-cell{overflow:hidden;float:left;background-color:inherit;border-right:1px solid;border-color:#d4d4d4;box-sizing:border-box}.ui-grid-cell:last-child{border-right:0}.ui-grid-cell-contents{padding:5px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;white-space:nowrap;-ms-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis;overflow:hidden;height:100%}.ui-grid-cell-contents-hidden{visibility:hidden;width:0;height:0;display:none}.ui-grid-row .ui-grid-cell.ui-grid-row-header-cell{background-color:#f0f0ee;border-bottom:solid 1px #d4d4d4}.ui-grid-footer-panel-background{background:#f3f3f3;background:-webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(1, #fff));background:-ms-linear-gradient(bottom, #eee, #fff);background:-moz-linear-gradient(center bottom, #eee 0, #fff 100%);background:-o-linear-gradient(#fff, #eee);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#ffffff&#39;, endColorstr=&#39;#eeeeee&#39;, GradientType=0)}.ui-grid-footer-panel{position:relative;border-bottom:1px solid #d4d4d4;border-top:1px solid #d4d4d4;overflow:hidden;font-weight:bold;background:#f3f3f3;background:-webkit-gradient(linear, left bottom, left top, color-stop(0, #eee), color-stop(1, #fff));background:-ms-linear-gradient(bottom, #eee, #fff);background:-moz-linear-gradient(center bottom, #eee 0, #fff 100%);background:-o-linear-gradient(#fff, #eee);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=&#39;#ffffff&#39;, endColorstr=&#39;#eeeeee&#39;, GradientType=0);-webkit-border-top-right-radius:-1px;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:0;-webkit-border-top-left-radius:-1px;-moz-border-radius-topright:-1px;-moz-border-radius-bottomright:0;-moz-border-radius-bottomleft:0;-moz-border-radius-topleft:-1px;border-top-right-radius:-1px;border-bottom-right-radius:0;border-bottom-left-radius:0;border-top-left-radius:-1px;-moz-background-clip:padding-box;-webkit-background-clip:padding-box;background-clip:padding-box}.ui-grid-grid-footer{float:left;width:100%}.ui-grid-footer-viewport{overflow:hidden}.ui-grid-footer-canvas{position:relative}.ui-grid-footer-canvas:before,.ui-grid-footer-canvas:after{content:&quot;&quot;;display:table;line-height:0}.ui-grid-footer-canvas:after{clear:both}.ui-grid-footer-cell-wrapper{position:relative;display:table;box-sizing:border-box;height:100%}.ui-grid-footer-cell-row{display:table-row}.ui-grid-footer-cell{overflow:hidden;background-color:inherit;border-right:1px solid;border-color:#d4d4d4;box-sizing:border-box;display:table-cell}.ui-grid-footer-cell:last-child{border-right:0}input[type=&quot;text&quot;].ui-grid-filter-input{padding:0;margin:0;border:0;width:100%;border:1px solid #d4d4d4;-webkit-border-top-right-radius:0;-webkit-border-bottom-right-radius:0;-webkit-border-bottom-left-radius:0;-webkit-border-top-left-radius:0;-moz-border-radius-topright:0;-moz-border-radius-bottomright:0;-moz-border-radius-bottomleft:0;-moz-border-radius-topleft:0;border-top-right-radius:0;border-bottom-right-radius:0;border-bottom-left-radius:0;border-top-left-radius:0;-moz-background-clip:padding-box;-webkit-background-clip:padding-box;background-clip:padding-box}input[type=&quot;text&quot;].ui-grid-filter-input:hover{border:1px solid #d4d4d4}.ui-grid-menu-button{z-index:2;position:absolute;right:0;top:0;background:#f3f3f3;border:1px solid #d4d4d4;cursor:pointer;height:31px;font-weight:normal}.ui-grid-menu-button .ui-grid-icon-container{margin-top:3px}.ui-grid-menu-button .ui-grid-menu{right:0}.ui-grid-menu-button .ui-grid-menu .ui-grid-menu-mid{overflow:scroll;max-height:300px;border:1px solid #d4d4d4}.ui-grid-menu{z-index:2;position:absolute;padding:0 10px 20px 10px;cursor:pointer;box-sizing:border-box}.ui-grid-menu .ui-grid-menu-inner{background:#f3f3f3;border:1px solid #d4d4d4;position:relative;white-space:nowrap;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-box-shadow:0 10px 20px rgba(0, 0, 0, 0.2), inset 0 12px 12px -14px rgba(0, 0, 0, 0.2);-moz-box-shadow:0 10px 20px rgba(0, 0, 0, 0.2), inset 0 12px 12px -14px rgba(0, 0, 0, 0.2);box-shadow:0 10px 20px rgba(0, 0, 0, 0.2), inset 0 12px 12px -14px rgba(0, 0, 0, 0.2)}.ui-grid-menu .ui-grid-menu-inner ul{margin:0;padding:0;list-style-type:none}.ui-grid-menu .ui-grid-menu-inner ul li{padding:8px;cursor:pointer}.ui-grid-menu .ui-grid-menu-inner ul li:hover{-webkit-box-shadow:inset 0 0 14px rgba(0,0,0,0.2);-moz-box-shadow:inset 0 0 14px rgba(0,0,0,0.2);box-shadow:inset 0 0 14px rgba(0,0,0,0.2)}.ui-grid-menu .ui-grid-menu-inner ul li.ui-grid-menu-item-active{-webkit-box-shadow:inset 0 0 14px rgba(0,0,0,0.2);-moz-box-shadow:inset 0 0 14px rgba(0,0,0,0.2);box-shadow:inset 0 0 14px rgba(0,0,0,0.2);background-color:#cecece}.ui-grid-menu .ui-grid-menu-inner ul li:not(:last-child){border-bottom:1px solid #d4d4d4}.ui-grid-sortarrow{right:5px;position:absolute;width:20px;top:0;bottom:0;background-position:center}.ui-grid-sortarrow.down{-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-o-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}@font-face{font-family:&#39;ui-grid&#39;;src:url(&#39;ui-grid.eot&#39;);src:url(&#39;ui-grid.eot#iefix&#39;) format(&#39;embedded-opentype&#39;),url(&#39;ui-grid.woff&#39;) format(&#39;woff&#39;),url(&#39;ui-grid.ttf?&#39;) format(&#39;truetype&#39;),url(&#39;ui-grid.svg?#ui-grid&#39;) format(&#39;svg&#39;);font-weight:normal;font-style:normal}[class^=&quot;ui-grid-icon&quot;]:before,[class*=&quot; ui-grid-icon&quot;]:before{font-family:&quot;ui-grid&quot;;font-style:normal;font-weight:normal;speak:none;display:inline-block;text-decoration:inherit;width:1em;margin-right:.2em;text-align:center;font-variant:normal;text-transform:none;line-height:1em;margin-left:.2em}.ui-grid-icon-blank::before{width:1em;content:&#39; &#39;}.ui-grid[dir=rtl] .ui-grid-header-cell,.ui-grid[dir=rtl] .ui-grid-footer-cell,.ui-grid[dir=rtl] .ui-grid-cell{float:right !important}.ui-grid[dir=rtl] .ui-grid-column-menu-button{position:absolute;left:1px;top:0;right:inherit}.ui-grid[dir=rtl] .ui-grid-cell:first-child,.ui-grid[dir=rtl] .ui-grid-header-cell:first-child,.ui-grid[dir=rtl] .ui-grid-footer-cell:first-child{border-right:0}.ui-grid[dir=rtl] .ui-grid-cell:last-child,.ui-grid[dir=rtl] .ui-grid-header-cell:last-child{border-right:1px solid #d4d4d4;border-left:0}.ui-grid[dir=rtl] .ui-grid-header-cell:first-child .ui-grid-vertical-bar,.ui-grid[dir=rtl] .ui-grid-footer-cell:first-child .ui-grid-vertical-bar,.ui-grid[dir=rtl] .ui-grid-cell:first-child .ui-grid-vertical-bar{width:0}.ui-grid[dir=rtl] .ui-grid-menu-button{z-index:2;position:absolute;left:0;right:auto;background:#f3f3f3;border:1px solid #d4d4d4;cursor:pointer;min-height:27px;font-weight:normal}.ui-grid[dir=rtl] .ui-grid-menu-button .ui-grid-menu{left:0;right:auto}.ui-grid[dir=rtl] .ui-grid-filter-container .ui-grid-filter-button{right:initial;left:0}.ui-grid[dir=rtl] .ui-grid-filter-container .ui-grid-filter-button [class^=&quot;ui-grid-icon&quot;]{right:initial;left:10px}.ui-grid-animate-spin{-moz-animation:ui-grid-spin 2s infinite linear;-o-animation:ui-grid-spin 2s infinite linear;-webkit-animation:ui-grid-spin 2s infinite linear;animation:ui-grid-spin 2s infinite linear;display:inline-block}@-moz-keyframes ui-grid-spin{0%{-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-moz-transform:rotate(359deg);-o-transform:rotate(359deg);-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@-webkit-keyframes ui-grid-spin{0%{-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-moz-transform:rotate(359deg);-o-transform:rotate(359deg);-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@-o-keyframes ui-grid-spin{0%{-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-moz-transform:rotate(359deg);-o-transform:rotate(359deg);-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@-ms-keyframes ui-grid-spin{0%{-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-moz-transform:rotate(359deg);-o-transform:rotate(359deg);-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes ui-grid-spin{0%{-moz-transform:rotate(0deg);-o-transform:rotate(0deg);-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-moz-transform:rotate(359deg);-o-transform:rotate(359deg);-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.ui-grid-cell-focus{outline:0;background-color:#b3c4c7}.ui-grid-focuser{width:0;height:0}div.ui-grid-cell input{border-radius:inherit;padding:0;width:100%;color:inherit;height:auto;font:inherit;outline:none}div.ui-grid-cell input:focus{color:inherit;outline:none}div.ui-grid-cell input[type=&quot;checkbox&quot;]{margin:9px 0 0 6px;width:auto}div.ui-grid-cell input.ng-invalid{border:1px solid #fc8f8f}div.ui-grid-cell input.ng-valid{border:1px solid #d4d4d4}.expandableRow .ui-grid-row:nth-child(odd) .ui-grid-cell{background-color:#fdfdfd}.expandableRow .ui-grid-row:nth-child(even) .ui-grid-cell{background-color:#f3f3f3}.scrollFiller{float:left;border:1px solid #d4d4d4}.ui-grid-tree-header-row{font-weight:bold !important}.movingColumn{position:absolute;top:0;border:1px solid #d4d4d4;box-shadow:inset 0 0 14px rgba(0,0,0,0.2)}.movingColumn .ui-grid-icon-angle-down{display:none}.ui-grid-pager-panel{position:absolute;left:0;bottom:0;width:100%;padding-top:3px;padding-bottom:3px}.ui-grid-pager-container{float:left}.ui-grid-pager-control{margin-right:10px;margin-left:10px;min-width:135px;float:left}.ui-grid-pager-control button{height:25px;min-width:26px}.ui-grid-pager-control input{height:26px;width:50px;vertical-align:top}.ui-grid-pager-control .first-bar{width:10px;border-left:2px solid #4d4d4d;margin-top:-6px;height:12px;margin-left:-3px}.ui-grid-pager-control .first-triangle{width:0;height:0;border-style:solid;border-width:5px 8.7px 5px 0;border-color:transparent #4d4d4d transparent transparent;margin-left:2px}.ui-grid-pager-control .next-triangle{margin-left:1px}.ui-grid-pager-control .prev-triangle{margin-left:0}.ui-grid-pager-control .last-triangle{width:0;height:0;border-style:solid;border-width:5px 0 5px 8.7px;border-color:transparent transparent transparent #4d4d4d;margin-left:-1px}.ui-grid-pager-control .last-bar{width:10px;border-left:2px solid #4d4d4d;margin-top:-6px;height:12px;margin-left:1px}.ui-grid-pager-row-count-picker{float:left}.ui-grid-pager-row-count-picker select{height:26px;width:60px}.ui-grid-pager-row-count-picker .ui-grid-pager-row-count-label{margin-top:3px}.ui-grid-pager-count-container{float:right;margin-top:4px;min-width:50px}.ui-grid-pager-count-container .ui-grid-pager-count{margin-right:10px;margin-left:10px;float:right}.ui-grid-pinned-container{position:absolute;display:inline;top:0}.ui-grid-pinned-container.ui-grid-pinned-container-left{float:left;left:0}.ui-grid-pinned-container.ui-grid-pinned-container-right{float:right;right:0}.ui-grid-pinned-container.ui-grid-pinned-container-left .ui-grid-header-cell:last-child{box-sizing:border-box;border-right:1px solid;border-width:1px;border-right-color:#aeaeae}.ui-grid-pinned-container.ui-grid-pinned-container-left .ui-grid-cell:last-child{box-sizing:border-box;border-right:1px solid;border-width:1px;border-right-color:#aeaeae}.ui-grid-pinned-container.ui-grid-pinned-container-left .ui-grid-header-cell:not(:last-child) .ui-grid-vertical-bar,.ui-grid-pinned-container .ui-grid-cell:not(:last-child) .ui-grid-vertical-bar{width:1px}.ui-grid-pinned-container.ui-grid-pinned-container-left .ui-grid-header-cell:not(:last-child) .ui-grid-vertical-bar{background-color:#d4d4d4}.ui-grid-pinned-container.ui-grid-pinned-container-left .ui-grid-cell:not(:last-child) .ui-grid-vertical-bar{background-color:#aeaeae}.ui-grid-pinned-container.ui-grid-pinned-container-left .ui-grid-header-cell:last-child .ui-grid-vertical-bar{right:-1px;width:1px;background-color:#aeaeae}.ui-grid-pinned-container.ui-grid-pinned-container-right .ui-grid-header-cell:first-child{box-sizing:border-box;border-left:1px solid;border-width:1px;border-left-color:#aeaeae}.ui-grid-pinned-container.ui-grid-pinned-container-right .ui-grid-cell:first-child{box-sizing:border-box;border-left:1px solid;border-width:1px;border-left-color:#aeaeae}.ui-grid-pinned-container.ui-grid-pinned-container-right .ui-grid-header-cell:not(:first-child) .ui-grid-vertical-bar,.ui-grid-pinned-container .ui-grid-cell:not(:first-child) .ui-grid-vertical-bar{width:1px}.ui-grid-pinned-container.ui-grid-pinned-container-right .ui-grid-header-cell:not(:first-child) .ui-grid-vertical-bar{background-color:#d4d4d4}.ui-grid-pinned-container.ui-grid-pinned-container-right .ui-grid-cell:not(:last-child) .ui-grid-vertical-bar{background-color:#aeaeae}.ui-grid-pinned-container.ui-grid-pinned-container-first .ui-grid-header-cell:first-child .ui-grid-vertical-bar{left:-1px;width:1px;background-color:#aeaeae}.ui-grid-column-resizer{top:0;bottom:0;width:5px;position:absolute;cursor:col-resize}.ui-grid-column-resizer.left{left:0}.ui-grid-column-resizer.right{right:0}.ui-grid-header-cell:last-child .ui-grid-column-resizer.right{border-right:1px solid #d4d4d4}.ui-grid[dir=rtl] .ui-grid-header-cell:last-child .ui-grid-column-resizer.right{border-right:0}.ui-grid[dir=rtl] .ui-grid-header-cell:last-child .ui-grid-column-resizer.left{border-left:1px solid #d4d4d4}.ui-grid.column-resizing{cursor:col-resize}.ui-grid.column-resizing .ui-grid-resize-overlay{position:absolute;top:0;height:100%;width:1px;background-color:#aeaeae}.ui-grid-row-saving .ui-grid-cell{color:#848484 !important}.ui-grid-row-dirty .ui-grid-cell{color:#610b38}.ui-grid-row-error .ui-grid-cell{color:#f00 !important}.ui-grid-row.ui-grid-row-selected&gt;[ui-grid-row]&gt;.ui-grid-cell{background-color:#c9dde1}.ui-grid-disable-selection{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default}.ui-grid-selection-row-header-buttons{cursor:pointer;opacity:.1}.ui-grid-selection-row-header-buttons.ui-grid-row-selected{opacity:1}.ui-grid-selection-row-header-buttons.ui-grid-all-selected{opacity:1}.ui-grid-tree-row-header-buttons.ui-grid-tree-header{cursor:pointer;opacity:1}.ui-grid-tree-header-row{font-weight:bold !important}.ui-grid-icon-plus-squared:before{content:&#39;\c350&#39;}.ui-grid-icon-minus-squared:before{content:&#39;\c351&#39;}.ui-grid-icon-search:before{content:&#39;\c352&#39;}.ui-grid-icon-cancel:before{content:&#39;\c353&#39;}.ui-grid-icon-info-circled:before{content:&#39;\c354&#39;}.ui-grid-icon-lock:before{content:&#39;\c355&#39;}.ui-grid-icon-lock-open:before{content:&#39;\c356&#39;}.ui-grid-icon-pencil:before{content:&#39;\c357&#39;}.ui-grid-icon-down-dir:before{content:&#39;\c358&#39;}.ui-grid-icon-up-dir:before{content:&#39;\c359&#39;}.ui-grid-icon-left-dir:before{content:&#39;\c35a&#39;}.ui-grid-icon-right-dir:before{content:&#39;\c35b&#39;}.ui-grid-icon-left-open:before{content:&#39;\c35c&#39;}.ui-grid-icon-right-open:before{content:&#39;\c35d&#39;}.ui-grid-icon-angle-down:before{content:&#39;\c35e&#39;}.ui-grid-icon-filter:before{content:&#39;\c35f&#39;}.ui-grid-icon-sort-alt-up:before{content:&#39;\c360&#39;}.ui-grid-icon-sort-alt-down:before{content:&#39;\c361&#39;}.ui-grid-icon-ok:before{content:&#39;\c362&#39;}.ui-grid-icon-menu:before{content:&#39;\c363&#39;}.ui-grid-icon-indent-left:before{content:&#39;\e800&#39;}.ui-grid-icon-indent-right:before{content:&#39;\e801&#39;}.ui-grid-icon-spin5:before{content:&#39;\ea61&#39;}</td>
+      </tr>
+</table>
+
+  <div class="BlobToolbar position-absolute js-file-line-actions dropdown js-menu-container js-select-menu d-none" aria-hidden="true">
+    <button class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1 dropdown-toggle js-menu-target" id="js-file-line-action-button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Inline file action toolbar" aria-controls="inline-file-actions">
+      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg>
+    </button>
+    <div class="dropdown-menu-content js-menu-content" id="inline-file-actions">
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
+        <li><clipboard-copy class="dropdown-item" style="cursor:pointer;" id="js-copy-lines" data-original-text="Copy lines">Copy lines</clipboard-copy></li>
+        <li><clipboard-copy class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</clipboard-copy></li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" href="/angular-ui/ui-grid.info/blame/feffe717c7583e3700ce2295b0c70692cfa3379c/release/3.0.1/ui-grid.min.css">View git blame</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+  <button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+  <div id="jump-to-line" style="display:none">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+      <button type="submit" class="btn">Go</button>
+</form>  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.32813s from unicorn-2614586120-wxfs0">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://blog.github.com" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can't perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" integrity="sha512-ZJLxhPfYuYU0MapbzqjNhwg2if/JrVmKZ1SdP+YwUlvCysCk9Up5KSnz49XzMIHFe9SAVGUbKJeFRug2Ne8R3w==" type="application/javascript" src="https://assets-cdn.github.com/assets/compat-413dd2a0695c3dfaf7de158468a91646.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-d4PH9lRwKrDe+8uVWwZoewIyD6u0d8n4JgHaUfWEy261ymA5nxRbDQEPDmZQBEgZYaXEMFCCB7VilZGMVuLx5w==" type="application/javascript" src="https://assets-cdn.github.com/assets/frameworks-d941de838fad400fb91238d23684a777.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-QoRSvLZ8gKtFbqZVGgdrfbouqZxmsKQnXe3pFtFd1ZtfoJIVsRTLnhFI26PW/5ts/4Rrsf8jssqJCNVYCsCp7A==" type="application/javascript" src="https://assets-cdn.github.com/assets/github-d19623a69cc756b5a2cbda89154a69e9.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+
+  </body>
+</html>
+

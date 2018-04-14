@@ -2,57 +2,64 @@
     ViewBag.Title = "Index";
 }
 
-<div class="container">>
-    <h1>NLog.SignalR - Demo</h1>
+<div class="container">
     
+    <h1>NLog.SignalR - Demo</h1>
+
     <div>
-        <button class="btn btn-primary" id="createLogEntryButton" >Create Log Entry</button>
-        <hr/>
+        <button class="btn btn-primary" id="createLogEntryButton">Create Log Entry</button>
+        <hr />
     </div>
 
     <div ng-app="myApp">
         <div id="scope" ng-controller="MyCtrl">
-            <div class="gridStyle" ng-grid="gridOptions"></div>
+            <div class="gridStyle" ui-grid="gridOptions"></div>
         </div>
     </div>
 
 </div>
 
 @section header {
-    <link rel="stylesheet" type="text/css" href="http://angular-ui.github.com/ng-grid/css/ng-grid.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
-    <script type="text/javascript" src="http://angular-ui.github.com/ng-grid/lib/ng-grid.debug.js"></script>
-    <script>
-        var app = angular.module('myApp', ['ngGrid']);
+    <link rel="stylesheet" type="text/css" href="/Content/ui-grid.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script type="text/javascript" src="/Scripts/ui-grid.min.js"></script>
 
-        app.controller('MyCtrl', function($scope) {
+    <script src="/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="/Scripts/jquery.signalR-2.2.1.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+
+    <script>
+        var app = angular.module('myApp', ['ui.grid'])
+            .controller('MyCtrl', MyCtrl);
+
+        MyCtrl.$inject = ['$scope', 'uiGridConstants'];
+
+        function MyCtrl($scope, uiGridConstants) {
             $scope.myData = [];
             $scope.gridOptions = {
+                enableSorting: true,
                 data: 'myData',
                 columnDefs: [
-                    { field: 'TimeStamp', displayName: 'Date', width: 225 },
+                    { field: 'TimeStamp', displayName: 'Date', sort: { direction: uiGridConstants.DESC }, width: 225 },
                     { field: 'Level', displayName: 'Level', width: 75 },
                     { field: 'Message', cellClass: 'Message', minWidth: 500, maxWidth: 1000 }
                 ],
-                sortInfo: { fields: ['TimeStamp'], directions: ['desc'] },
-                afterSelectionChange: function(rowItem, event) { alert(rowItem.entity.Message); }
+                afterSelectionChange: function (rowItem, event) { alert(rowItem.entity.Message); }
             };
 
-            $scope.changeData = function(logEvent) {
+            $scope.changeData = function (logEvent) {
                 $scope.myData.push(logEvent);
             };
-        });
+        }
     </script>
-    
-    <script src="~/Scripts/jquery.signalR-2.1.1.min.js"></script>
-    <script src="~/signalr/hubs"></script>
-    
+
+
+
     <style>
         .gridStyle {
             border: 1px solid rgb(212, 212, 212);
             height: 600px
         }
-
     </style>
 
     <script>
@@ -73,9 +80,9 @@
             };
 
             nlog.logging = true;
-            $.connection.hub.start().done(function () {
+            $.connection.hub.start().done(function() {
                 $("#createLogEntryButton").focus();
             });
-        })
+        });
     </script>
 }
