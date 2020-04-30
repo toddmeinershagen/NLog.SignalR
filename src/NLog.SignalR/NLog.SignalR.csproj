@@ -7,7 +7,7 @@
     <Description>Custom NLog target for sending log events to a SignalR hub.</Description>
     <Product>NLog.SignalR</Product>
     <Version Condition=" '$(Version)' == ''">$(VersionSuffix)</Version>
-    <Version Condition=" '$(Version)' == ''">5.0.0</Version>
+    <Version Condition=" '$(Version)' == ''">4.2.0</Version>
     <Authors>Todd Meinershagen</Authors>
     <CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
     <Copyright>Copyright © 2014-$(CurrentYear)</Copyright>
@@ -17,10 +17,10 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/toddmeinershagen/NLog.SignalR/master/LICENSE</PackageLicenseUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/toddmeinershagen/NLog.SignalR</RepositoryUrl>
-    <Version>4.1.0</Version>
+    <Version>4.2.0</Version>
     <PackageTags>nlog target signalr</PackageTags>
     <PackageReleaseNotes>Custom NLog target for send logs to a SignalR hub. This release is based on SignalR 2.0.
-&gt;5.0.0 - Upgraded to support NET Standard 2.0 and added NLog Layout-support for Uri, HubName and MethodName
+&gt;4.2.0 - Upgraded to support NET Standard 2.0 and added NLog Layout-support for Uri, HubName and MethodName
 &gt;4.1.0 - Upgraded to support NET Standard 1.3 so that it can be used with dotnet core projects.
 &gt;4.0.1 - Upgraded the NLog dependency to force clients to use the newer version which contains breaking changes.
 &gt;2.0.1 - Fixed a [bug #4](https://github.com/toddmeinershagen/NLog.SignalR/issues/4)
