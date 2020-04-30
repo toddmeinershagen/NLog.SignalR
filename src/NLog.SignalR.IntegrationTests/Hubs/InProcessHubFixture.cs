@@ -7,7 +7,7 @@ namespace NLog.SignalR.IntegrationTests.Hubs
         private IHubHost _host;
         public const string HubBaseUrl = "http://localhost:1234";
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init()
         {
             StartHub();
@@ -28,7 +28,7 @@ namespace NLog.SignalR.IntegrationTests.Hubs
             _host = null;
         }
 
-        [TestFixtureTearDown]
+        [OneTimeTearDown]
         public void Dispose()
         {
             StopHub();

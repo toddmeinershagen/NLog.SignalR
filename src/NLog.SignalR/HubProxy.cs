@@ -5,61 +5,67 @@ namespace NLog.SignalR
 {
     public class HubProxy
     {
-        private readonly SignalRTarget _target;
         public HubConnection Connection;
         private IHubProxy _proxy;
 
-        public HubProxy(SignalRTarget target)
+        public void Log(LogEvent logEvent, string uri, string hubName, string methodName)
         {
-            _target = target;
-        }
-
-        public void Log(LogEvent logEvent)
-        {
-            EnsureProxyExists();
+            EnsureProxyExists(uri, hubName);
 
             if (_proxy != null)
-                _proxy.Invoke(_target.MethodName, logEvent);
+                _proxy.Invoke(methodName, logEvent).ContinueWith(t => ProxyInvokeFailed(t), System.Threading.Tasks.TaskContinuationOptions.OnlyOnFaulted);
         }
 
-        public void EnsureProxyExists()
+        private static void ProxyInvokeFailed(System.Threading.Tasks.Task completedTask)
+        {
+            if (completedTask.Exception != null)
+                NLog.Common.InternalLogger.Error("SignalR - Invoke Method Failure. Exception={0}", completedTask.Exception);
+        }
+
+        public void EnsureProxyExists(string uri, string hubName)
         {
             if (_proxy == null || Connection == null)
             {
-                BeginNewConnection();
+                BeginNewConnection(uri, hubName);
             } 
-
             else if (Connection.State == ConnectionState.Disconnected)
             {
-                StartExistingConnection();
+                StartExistingConnection(uri, hubName);
             }
         }
 
-        private void BeginNewConnection()
+        private void BeginNewConnection(string uri, string hubName)
         {
             try
             {
-                Connection = new HubConnection(_target.Uri);
-                _proxy = Connection.CreateHubProxy(_target.HubName);
-                Connection.Start().Wait();
-
-                _proxy.Invoke("Notify", Connection.ConnectionId);
+                Connection = new HubConnection(uri);
+                _proxy = Connection.CreateHubProxy(hubName);
+                StartExistingConnection(uri, hubName);
+                _proxy?.Invoke("Notify", Connection.ConnectionId);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                NLog.Common.InternalLogger.Error("SignalR - Create Connection Failure. Uri={0}, HubName={1}, Exception={2}", uri, hubName, ex);
                 _proxy = null;
+                throw;
             }
         }
 
-        private void StartExistingConnection()
+        private void StartExistingConnection(string uri, string hubName)
         {
             try
             {
+#if !NET40
+                Connection.Start().ConfigureAwait(false).GetAwaiter().GetResult();
+#else
                 Connection.Start().Wait();
+#endif
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                NLog.Common.InternalLogger.Error("SignalR - Start Connection Failure. Uri={0}, HubName={1}, Exception={2}", uri, hubName, ex);
                 _proxy = null;
+                throw;
             }
         }
 

@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using System.IO;
 using System.Text;
 using System.Threading;
 using James.Testing;
@@ -17,7 +18,7 @@ namespace NLog.SignalR.IntegrationTests.Hubs
         public const string HubBaseUrl = "http://localhost:1235";
         public const string RestBaseUrl = "http://localhost:1236";
 
-        [TestFixtureSetUp]
+        [OneTimeSetUp]
         public void Init()
         {
             _host = new NancyHost(new Uri(RestBaseUrl));
@@ -31,10 +32,11 @@ namespace NLog.SignalR.IntegrationTests.Hubs
 
         protected void StartHub()
         {
+            var filePath = Path.Combine(TestContext.CurrentContext.TestDirectory, "NLog.SignalR.IntegrationTests.exe");
             _process = new Process
             {
                 StartInfo =
-                    new ProcessStartInfo("NLog.SignalR.IntegrationTests.exe", HubBaseUrl)
+                    new ProcessStartInfo(filePath, HubBaseUrl)
                     {
                         UseShellExecute = false,
                         CreateNoWindow = true,
@@ -82,7 +84,7 @@ namespace NLog.SignalR.IntegrationTests.Hubs
             _process = null;
         }
 
-        [TestFixtureTearDown]
+        [OneTimeTearDown]
         public void Dispose()
         {
             StopHub();
