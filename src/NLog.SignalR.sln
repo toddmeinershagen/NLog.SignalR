@@ -1,13 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.SignalR", "NLog.SignalR\NLog.SignalR.csproj", "{1414FDCE-96BA-4706-BCEF-EEEC410DF025}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{17AF47BD-2811-4734-959C-8A648C81CFE6}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLog.SignalR", "NLog.SignalR\NLog.SignalR.csproj", "{1414FDCE-96BA-4706-BCEF-EEEC410DF025}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.SignalR.IntegrationTests", "NLog.SignalR.IntegrationTests\NLog.SignalR.IntegrationTests.csproj", "{0A166486-8CE1-4748-BEA2-A4BA3CDABFF6}"
 EndProject
@@ -44,7 +40,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A3DE386F-99E7-48DD-8454-A1D5A67FC2D9} = {034E3F7B-03AF-46F4-B25B-3E0CCB46EA59}
 		{F69C8EBC-2EB0-442C-8C1A-296CB07B82E8} = {034E3F7B-03AF-46F4-B25B-3E0CCB46EA59}
+		{A3DE386F-99E7-48DD-8454-A1D5A67FC2D9} = {034E3F7B-03AF-46F4-B25B-3E0CCB46EA59}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EE09234-8D21-44CD-B5F0-B35A8371B4AA}
 	EndGlobalSection
 EndGlobal
