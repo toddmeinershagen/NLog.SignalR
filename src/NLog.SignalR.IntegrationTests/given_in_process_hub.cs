@@ -162,7 +162,7 @@ namespace NLog.SignalR.IntegrationTests
 
             Wait.For(1).Seconds();
 
-            target.Proxy.Connection.Stop();
+            target.Proxy.Stop();
 
             Logger.Error(expectedMessage);
 

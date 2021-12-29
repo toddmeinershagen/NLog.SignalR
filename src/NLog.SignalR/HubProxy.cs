@@ -3,32 +3,30 @@ using Microsoft.AspNet.SignalR.Client;
 
 namespace NLog.SignalR
 {
-    public class HubProxy
+    public sealed class HubProxy : IDisposable
     {
-        public HubConnection Connection;
+        private HubConnection _connection;
         private IHubProxy _proxy;
 
         public void Log(LogEvent logEvent, string uri, string hubName, string methodName)
         {
             EnsureProxyExists(uri, hubName);
-
-            if (_proxy != null)
-                _proxy.Invoke(methodName, logEvent).ContinueWith(t => ProxyInvokeFailed(t), System.Threading.Tasks.TaskContinuationOptions.OnlyOnFaulted);
+            _proxy?.Invoke(methodName, logEvent).ContinueWith(t => ProxyInvokeFailed(t), System.Threading.Tasks.TaskContinuationOptions.OnlyOnFaulted);
         }
 
         private static void ProxyInvokeFailed(System.Threading.Tasks.Task completedTask)
         {
             if (completedTask.Exception != null)
-                NLog.Common.InternalLogger.Error("SignalR - Invoke Method Failure. Exception={0}", completedTask.Exception);
+                NLog.Common.InternalLogger.Error(completedTask.Exception, "SignalR - Invoke Method Failure");
         }
 
         public void EnsureProxyExists(string uri, string hubName)
         {
-            if (_proxy == null || Connection == null)
+            if (_proxy == null || _connection == null)
             {
                 BeginNewConnection(uri, hubName);
             } 
-            else if (Connection.State == ConnectionState.Disconnected)
+            else if (_connection.State == ConnectionState.Disconnected)
             {
                 StartExistingConnection(uri, hubName);
             }
@@ -38,14 +36,14 @@ namespace NLog.SignalR
         {
             try
             {
-                Connection = new HubConnection(uri);
-                _proxy = Connection.CreateHubProxy(hubName);
+                _connection = new HubConnection(uri);
+                _proxy = _connection.CreateHubProxy(hubName);
                 StartExistingConnection(uri, hubName);
-                _proxy?.Invoke("Notify", Connection.ConnectionId);
+                _proxy?.Invoke("Notify", _connection.ConnectionId);
             }
             catch (Exception ex)
             {
-                NLog.Common.InternalLogger.Error("SignalR - Create Connection Failure. Uri={0}, HubName={1}, Exception={2}", uri, hubName, ex);
+                NLog.Common.InternalLogger.Error(ex, "SignalR - Create Connection Failure. Uri={0}, HubName={1}", uri, hubName);
                 _proxy = null;
                 throw;
             }
@@ -55,19 +53,36 @@ namespace NLog.SignalR
         {
             try
             {
-#if !NET40
-                Connection.Start().ConfigureAwait(false).GetAwaiter().GetResult();
-#else
-                Connection.Start().Wait();
-#endif
+                _connection.Start().ConfigureAwait(false).GetAwaiter().GetResult();
             }
             catch (Exception ex)
             {
-                NLog.Common.InternalLogger.Error("SignalR - Start Connection Failure. Uri={0}, HubName={1}, Exception={2}", uri, hubName, ex);
+                NLog.Common.InternalLogger.Error(ex, "SignalR - Start Connection Failure. Uri={0}, HubName={1}", uri, hubName);
                 _proxy = null;
                 throw;
             }
         }
 
+        public void Dispose()
+        {
+            try
+            {
+                _connection?.Stop(TimeSpan.FromSeconds(2));
+            }
+            catch (Exception ex)
+            {
+                NLog.Common.InternalLogger.Error(ex, "SignalR - Stop Connection Failure");
+            }
+            finally
+            {
+                _connection = null;
+                _proxy = null;
+            }
+        }
+
+        public void Stop()
+        {
+            _connection?.Stop();
+        }
     }
 }
