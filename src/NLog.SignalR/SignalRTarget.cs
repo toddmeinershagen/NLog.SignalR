@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using NLog.Common;
 using NLog.Config;
 using NLog.Layouts;
 using NLog.Targets;
@@ -20,26 +21,31 @@ namespace NLog.SignalR
         [DefaultValue("Log")]
         public Layout MethodName { get; set; }
 
-        public readonly HubProxy Proxy;
+        public HubProxy Proxy { get; private set; }
 
         public SignalRTarget()
         {
             HubName = "LoggingHub";
             MethodName = "Log";
             Proxy = new HubProxy();
-#if NETSTANDARD
             OptimizeBufferReuse = true;
-#endif
         }
 
         protected override void Write(LogEventInfo logEvent)
         {
-            var renderedMessage = this.Layout.Render(logEvent);
-            var uri = this.Uri.Render(logEvent);
-            var hubName = this.HubName.Render(logEvent);
-            var methodName = this.MethodName.Render(logEvent);
+            var renderedMessage = RenderLogEvent(this.Layout, logEvent);
+            var uri = RenderLogEvent(this.Uri, logEvent);
+            var hubName = RenderLogEvent(this.HubName, logEvent);
+            var methodName = RenderLogEvent(this.MethodName, logEvent);
             var item = new LogEvent(logEvent, renderedMessage);
             Proxy.Log(item, uri, hubName, methodName);
+        }
+
+        protected override void CloseTarget()
+        {
+            var proxy = Proxy;
+            Proxy = new HubProxy();
+            proxy.Dispose();
         }
     }
 }

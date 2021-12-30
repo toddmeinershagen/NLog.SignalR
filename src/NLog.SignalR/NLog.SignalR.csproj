@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net45;net40;netstandard1.3;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net45;netstandard1.3;netstandard2.0</TargetFrameworks>
 
     <Title>NLog.SignalR</Title>
     <Company>Todd Meinershagen</Company>
     <Description>Custom NLog target for sending log events to a SignalR hub.</Description>
     <Product>NLog.SignalR</Product>
     <Version Condition=" '$(Version)' == ''">$(VersionSuffix)</Version>
-    <Version Condition=" '$(Version)' == ''">4.2.0</Version>
+    <Version Condition=" '$(Version)' == ''">4.3.0</Version>
     <Authors>Todd Meinershagen</Authors>
     <CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
     <Copyright>Copyright © 2014-$(CurrentYear)</Copyright>
@@ -27,13 +27,8 @@
 &gt;2.0.0 - Initial version supporting SignalR 2.0</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' != 'netstandard1.3' And '$(TargetFramework)' != 'netstandard2.0' ">
-    <PackageReference Include="NLog" Version="4.0.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="6.0.4" />
-    <PackageReference Include="Microsoft.AspNet.SignalR.Client" Version="2.1.1" />
-  </ItemGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' Or '$(TargetFramework)' == 'netstandard2.0' ">
-    <PackageReference Include="NLog" Version="4.5.0" />
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.5.11" />
     <PackageReference Include="Microsoft.AspNet.SignalR.Client" Version="2.4.1" />
   </ItemGroup>
 </Project>
