@@ -21,7 +21,9 @@ namespace NLog.SignalR.IntegrationTests.Hubs
         [OneTimeSetUp]
         public void Init()
         {
-            _host = new NancyHost(new Uri(RestBaseUrl));
+            var configuration = new HostConfiguration();
+            configuration.UrlReservations.CreateAutomatically = true;
+            _host = new NancyHost(configuration, new Uri(RestBaseUrl));
             _host.Start();
 
             StartHub();
