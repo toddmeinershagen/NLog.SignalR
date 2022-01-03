@@ -15,15 +15,13 @@ namespace NLog.SignalR.IntegrationTests.Hubs
     {
         private NancyHost _host;
         private Process _process;
-        public const string HubBaseUrl = "http://localhost:1235";
-        public const string RestBaseUrl = "http://localhost:1236";
+        public static readonly string HubBaseUrl = "http://localhost:80/Temporary_Listen_Addresses/" + Guid.NewGuid().ToString("D") + "/";
+        public static readonly string RestBaseUrl = "http://localhost:80/Temporary_Listen_Addresses/" + Guid.NewGuid().ToString("D") + "/";
 
         [OneTimeSetUp]
         public void Init()
         {
-            var configuration = new HostConfiguration();
-            configuration.UrlReservations.CreateAutomatically = true;
-            _host = new NancyHost(configuration, new Uri(RestBaseUrl));
+            _host = new NancyHost(new Uri(RestBaseUrl));
             _host.Start();
 
             StartHub();
@@ -38,7 +36,7 @@ namespace NLog.SignalR.IntegrationTests.Hubs
             _process = new Process
             {
                 StartInfo =
-                    new ProcessStartInfo(filePath, HubBaseUrl)
+                    new ProcessStartInfo(filePath, HubBaseUrl + " " + RestBaseUrl)
                     {
                         UseShellExecute = false,
                         CreateNoWindow = true,

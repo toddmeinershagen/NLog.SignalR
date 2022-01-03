@@ -6,7 +6,6 @@ using FluentAssertions;
 using James.Testing;
 using NLog.Config;
 using NLog.SignalR.IntegrationTests.Hubs;
-using NLog.Targets.Wrappers;
 using NUnit.Framework;
 
 namespace NLog.SignalR.IntegrationTests
