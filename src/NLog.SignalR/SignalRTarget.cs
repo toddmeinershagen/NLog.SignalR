@@ -41,6 +41,11 @@ namespace NLog.SignalR
             Proxy.Log(item, uri, hubName, methodName);
         }
 
+        protected override void FlushAsync(AsyncContinuation asyncContinuation)
+        {
+            Proxy.Flush(asyncContinuation);
+        }
+
         protected override void CloseTarget()
         {
             var proxy = Proxy;

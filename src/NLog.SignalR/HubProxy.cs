@@ -22,22 +22,32 @@ namespace NLog.SignalR
 
         public void EnsureProxyExists(string uri, string hubName)
         {
+            if (_proxy != null && _connection?.State == ConnectionState.Disconnected)
+            {
+                if (!StartExistingConnection(uri, hubName))
+                {
+                    _proxy = null;
+                }
+            }
+
             if (_proxy == null || _connection == null)
             {
                 BeginNewConnection(uri, hubName);
             } 
-            else if (_connection.State == ConnectionState.Disconnected)
-            {
-                StartExistingConnection(uri, hubName);
-            }
         }
 
         private void BeginNewConnection(string uri, string hubName)
         {
             try
             {
-                _connection = new HubConnection(uri);
-                _proxy = _connection.CreateHubProxy(hubName);
+                var connection = new HubConnection(uri);
+                connection.Error += (ex) =>
+                {
+                    NLog.Common.InternalLogger.Error(ex, "SignalR - Connection Failure. Uri={0}, HubName={1}", uri, hubName);
+                };
+
+                _proxy = connection.CreateHubProxy(hubName);
+                _connection = connection;
                 StartExistingConnection(uri, hubName);
                 _proxy?.Invoke("Notify", _connection.ConnectionId);
             }
@@ -49,18 +59,35 @@ namespace NLog.SignalR
             }
         }
 
-        private void StartExistingConnection(string uri, string hubName)
+        private bool StartExistingConnection(string uri, string hubName)
         {
             try
             {
                 _connection.Start().ConfigureAwait(false).GetAwaiter().GetResult();
+                if (_connection.State != ConnectionState.Connected)
+                {
+                    NLog.Common.InternalLogger.Error("SignalR - Start Connection Failure. Uri={0}, HubName={1}", uri, hubName);
+                    return false;
+                }
+
+                return true;
             }
             catch (Exception ex)
             {
                 NLog.Common.InternalLogger.Error(ex, "SignalR - Start Connection Failure. Uri={0}, HubName={1}", uri, hubName);
                 _proxy = null;
-                throw;
+                return false;
             }
+        }
+
+        public void Flush(NLog.Common.AsyncContinuation asyncContinuation)
+        {
+            asyncContinuation(null);
+        }
+
+        public void Stop()
+        {
+            _connection?.Stop();
         }
 
         public void Dispose()
@@ -78,11 +105,6 @@ namespace NLog.SignalR
                 _connection = null;
                 _proxy = null;
             }
-        }
-
-        public void Stop()
-        {
-            _connection?.Stop();
         }
     }
 }
