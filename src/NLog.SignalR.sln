@@ -13,6 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.SignalR.Sample.Command
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{034E3F7B-03AF-46F4-B25B-3E0CCB46EA59}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLog.AspNetCore.SignalR", "NLog.AspNetCore.SignalR\NLog.AspNetCore.SignalR.csproj", "{9857CD98-0BBE-47C5-8385-F9C598D22B9B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLog.AspNetCore.SignalR.Tests", "NLog.AspNetCore.SignalR.Tests\NLog.AspNetCore.SignalR.Tests.csproj", "{89C72F89-C458-4F95-A165-69133F612A76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6877F7C8-1050-4FB9-B462-0598406C288E}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +44,14 @@ Global
 		{A3DE386F-99E7-48DD-8454-A1D5A67FC2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3DE386F-99E7-48DD-8454-A1D5A67FC2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3DE386F-99E7-48DD-8454-A1D5A67FC2D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9857CD98-0BBE-47C5-8385-F9C598D22B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9857CD98-0BBE-47C5-8385-F9C598D22B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9857CD98-0BBE-47C5-8385-F9C598D22B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9857CD98-0BBE-47C5-8385-F9C598D22B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C72F89-C458-4F95-A165-69133F612A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C72F89-C458-4F95-A165-69133F612A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C72F89-C458-4F95-A165-69133F612A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C72F89-C458-4F95-A165-69133F612A76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

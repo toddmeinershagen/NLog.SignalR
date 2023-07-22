@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+
+    <Company>Todd Meinershagen</Company>
+    <Description>Custom NLog target for sending log events to a AspNetCore SignalR Hub.</Description>
+    <Version>1.0.0</Version>
+    <Authors>Todd Meinershagen</Authors>
+    <CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
+    <Copyright>Copyright © 2022-$(CurrentYear)</Copyright>
+    <RootNamespace>NLog.SignalR</RootNamespace>
+
+    <PackageIconUrl>http://nlog-project.org/N.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/toddmeinershagen/NLog.SignalR</PackageProjectUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/toddmeinershagen/NLog.SignalR/master/LICENSE</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>git://github.com/toddmeinershagen/NLog.SignalR</RepositoryUrl>
+    <PackageTags>nlog target signalr</PackageTags>
+    <PackageReleaseNotes>
+      1.0.0 - Initial version supporting Microsoft.AspNetCore.SignalR.Client
+    </PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\NLog.SignalR\ILoggingHub.cs" Link="ILoggingHub.cs" />
+    <Compile Include="..\NLog.SignalR\LogEvent.cs" Link="LogEvent.cs" />
+    <Compile Include="..\NLog.SignalR\SignalRTarget.cs" Link="SignalRTarget.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.5.11" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

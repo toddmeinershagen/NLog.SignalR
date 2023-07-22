@@ -1,7 +1,7 @@
 NLog.SignalR
 ============
 
-NLog.SignalR is a [SignalR](https://github.com/SignalR/SignalR) target for [NLog](https://github.com/jkowalski/NLog), allowing you to send log messages straight to a SignalR hub in real-time.
+NLog.SignalR is a [SignalR](https://github.com/SignalR/SignalR) target for [NLog](https://github.com/NLog/NLog), allowing you to send log messages straight to a SignalR hub in real-time.
 
 [![NLog.SignalR](https://badge.fury.io/nu/NLog.SignalR.svg)](https://badge.fury.io/nu/NLog.SignalR)
 [![AppVeyor](https://img.shields.io/appveyor/ci/toddmeinershagen/nlog-signalr/master.svg)](https://ci.appveyor.com/project/toddmeinershagen/nlog-signalr/branch/master)
@@ -22,31 +22,25 @@ Add the assembly and new target to NLog.config:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<nlog   xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        autoReload="true"
-        throwExceptions="false">
+<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <extensions>
+    <add assembly="NLog.SignalR" />
+  </extensions>
 
+  <targets async="true">
+    <target xsi:type="SignalR"
+            name="signalr"
+            uri="http://localhost:1860"
+            hubName="LoggingHub"
+            methodName="Log"
+            layout="${message}"
+            />
+  </targets>
 
-      <!-- extensions is not needed in NLog 4+ -->
-      <extensions>
-        <add assembly="NLog.SignalR" />
-      </extensions>
-
-      <targets async="true">
-        <target xsi:type="SignalR"
-                name="signalr"
-                uri="http://localhost:1860"
-                hubName ="LoggingHub"
-                methodName ="Log"
-                layout="${message}"
-              />
-
-    </targets>
-    
-    <rules>
-      <logger name="*" minlevel="Trace" writeTo="signalr" />
-    </rules>
+  <rules>
+    <logger name="*" minlevel="Trace" writeTo="signalr" />
+  </rules>
 </nlog>
 ```
 
