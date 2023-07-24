@@ -1,4 +1,4 @@
-﻿using System.Web;
+﻿
 using System.Web.Optimization;
 
 namespace NLog.SignalR.Sample.Web
